@@ -16,7 +16,7 @@
   --main-color: #F5CB5C;
   --bg-color: #fff;
   --text-color: #242423;
-  --hover: #333533;
+  --hover: #F5CB5C;
   --big-font: 3.2rem;
   --medium-font: 1.8rem;
   --p-font: 0.941rem;
@@ -108,11 +108,6 @@ header.shadow {
   display: none;
 }
 
-#darkmode {
-  font-size: 22px;
-  cursor: pointer;
-}
-
 .home {
   position: relative;
   width: 100%;
@@ -176,6 +171,11 @@ header.shadow {
 
 .btn:hover {
   background: var(--hover);
+  transition: all 2s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
 }
 
 
@@ -300,12 +300,7 @@ span {
   align-items: center;
   text-align: center;
   border-radius: 0.5rem;
-  border-bottom: 2px solid var(--main-color);
   box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
-}
-
-.services-box:hover {
-  background-color: #02225a;
 }
 
 .services-box h3 {
@@ -314,18 +309,10 @@ span {
   margin: 0.7rem 0 0.4rem;
 }
 
-.services-box:hover h3 {
-  color: var(--bg-color);
-}
-
 .services-box .bx {
   padding-top: 2rem;
   font-size: 54px;
   color: var(--main-color);
-}
-
-.services-box:hover .bx {
-  color: #22cf91;
 }
 
 .services-box a {
@@ -375,7 +362,7 @@ form textarea {
 .contact-button {
   width: 160px;
   cursor: pointer;
-  background: #2768d9;
+  background: #ffd972;
   color: var(--bg-color);
   justify-content: center;
   text-transform: uppercase;
@@ -385,6 +372,11 @@ form textarea {
 
 .contact-button:hover {
   background: var(--hover);
+  transition: all .4s;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -ms-transition: all .4s;
+  -o-transition: all .4s;
 }
 
 .footer {
@@ -473,12 +465,6 @@ form textarea {
     padding: 1.5rem;
     display: block;
     background: var(--bg-color);
-  }
-
-  #darkmode {
-    position: absolute;
-    top: 1.4rem;
-    right: 2rem;
   }
 
   .scroll-down {
